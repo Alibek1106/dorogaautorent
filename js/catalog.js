@@ -53,7 +53,7 @@ const getCard = document.querySelectorAll(".card");
 getCard.forEach((el, idx) => {
     console.dir(el)
     const cardImg = el.childNodes[0].childNodes[0].src
-    const cardPrice = el.childNodes[0].childNodes[1].childNodes[0].innerText
+    const cardPrice = el.childNodes[0].childNodes[1].innerText
     const cardName = el.childNodes[1].childNodes[0].innerText
     const cardYear = el.childNodes[1].childNodes[1].childNodes[0].innerText
     const cardType = el.childNodes[1].childNodes[1].childNodes[1].innerText
