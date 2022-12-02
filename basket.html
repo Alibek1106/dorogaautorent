@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <ul class="header-links">
+                    <li class="header-link"><a href="index.html">Главная</a></li>
+                    <li class="header-link"><a href="catalog.html">Каталог</a></li>
+                    <li class="header-link"><a href="faq.html">FAQ</a></li>
+                    <li class="header-link"><button class="contact">Контакты</button></li>
+                </ul>
+                <div class="header-left">
+                    <div class="header-phone">
+                        <img src="images/telephone-inbound.svg" alt="">
+                    </div>
+                    <div class="header-phone-num">
+                        <a href="tel:+996705609393">+996 (705) 60-93-93</a>
+                        <p>Мы работаем круглосуточно.</p>
+                    </div>
+                </div>
+                <div class="header-basket">
+                    <img src="images/basket-active.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="basket cards"></div>
+        </div>
+    </main>
+
+
+    <div class="contact-modal">
+        <div class="modal-content">
+            <button class="modal-close">Close</button>
+            <h2>Позвоните нам:</h2>
+            <div class="numbers">
+                <a href="tel:0705609393">+996(705) 60-93-93</a><br>
+                <a href="tel:0704529119">+996(704) 52-91-19</a>
+            </div>
+            <h3>Или оставьте ваш номер<br> мы свяжемся с вами как можно скорее</h3>
+            <div class="contact-inp">
+                <input type="text" class="modal-input">
+                <button class="modal-send">Отправить</button>
+            </div>
+        </div>
+    </div>  
+    <script type="module" src="js/basket.js"></script>
+</body>
+</html>

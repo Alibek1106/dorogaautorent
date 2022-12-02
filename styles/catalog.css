@@ -1,0 +1,11 @@
+.cards{
+    width: calc(100% - 200px);
+}
+
+.card{
+    width: calc(50% - 30px);
+}
+
+.card-img{
+    height: 320px;
+}

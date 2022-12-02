@@ -1,0 +1,537 @@
+.header{
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.98);
+    color: #919191;
+}
+
+.header-row{
+    display: flex;
+}
+
+.logo{
+    margin-right: 25px;
+}
+
+.contact{
+    color: #919191;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}
+
+.active{
+    color: orange;
+}
+
+.header-links{
+    display: flex;
+    margin: auto 0;
+    font-size: 18px;
+}
+
+.header-link:hover{
+    text-decoration: underline;
+}
+
+.header-link:not(:last-child){
+    margin-right: 30px;
+}
+
+.header-left{
+    display: flex;
+    margin: auto 0 auto auto;
+}
+
+.header-left a{
+    font-size: 25px;
+    color: #fff;
+}
+
+.header-left a:hover{
+    text-decoration: underline;
+}
+
+.header-phone{
+    margin: auto 15px auto auto;
+}
+
+.header-basket{
+    margin: auto 0 auto 50px;
+}
+
+
+
+/* MODAL CONTACT */
+
+.contact-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+}
+
+.contact-modal h2{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.contact-modal h3{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.numbers{
+    margin-bottom: 20px;
+}
+
+.contact-inp input{
+    background-color: transparent;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid rgb(80, 80, 80);
+    height: 30px;
+    width: 250px;
+    padding: 0 10px;
+}
+
+.contact-inp input:focus{
+    outline: none;
+}
+
+.contact-inp button{
+    background-color: transparent;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 0 10px 10px 0;
+    height: 30px;
+    position: absolute;
+    border-left: none;
+    padding: 0 10px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+.main-section{
+    background: url(../images/background-land-cruiser.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.main-header{
+    font-size: 55px;
+    width: 600px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.main-header span{
+    font-weight: 300;
+}
+
+.main-description{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.main-description-line{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 11px;
+}
+
+.main-description-text{
+    width: 560px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.contacts-btn button{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 80px;
+}
+
+.car-cards{
+    padding: 100px 0;
+}
+
+.page-number-wrapper{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.page-number{
+    font-size: 70px;
+    font-weight: 700;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.black{
+    background-color: #353535;
+    color: #fff;
+}
+
+.white{
+    background-color: #fff;
+    color: #3a3a3a;
+}
+
+.page-number-header-text{
+    margin-left: 50px;
+}
+
+.page-number-header-text h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.page-number-header-text span{
+    font-weight: 300;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+    margin-bottom: 30px;
+}
+
+.card-info{
+    margin: 0 auto 20px;
+}
+
+.card-img{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 30px;
+}
+
+.card-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.name-of-car{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.car-descr{
+    display: flex;
+}
+
+.car-descr span{
+    border-left: 1px solid #6f6f6f;
+    border-top: 1px solid #6f6f6f;
+    border-bottom: 1px solid #6f6f6f;
+    padding: 20px 23px;
+    display: block;
+}
+
+.car-descr span:last-child{
+    border-right: 1px solid #6f6f6f;
+}
+
+.reserve-btn{
+    margin: 0 auto;
+}
+
+.reserve-btn button{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 36px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card-img{
+    position: relative;
+}
+
+.car-price{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.all-cars-btn{
+    display: flex;
+}
+
+.all-cars-btn a{
+    border: 1px solid #6f6f6f;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.all-cars-btn a:hover{
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.why-us{
+    background: url('../images/background-lx570.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.why-us-header{
+    font-size: 71px;
+    color: #fff;
+    width: 894px;
+    margin-bottom: 40px;
+}
+
+.why-us-header span{
+    font-weight: 700;
+}
+
+.terms{
+    padding: 100px 0;
+}
+
+.terms-cards{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.term-card{
+    width: calc(33% - 60px);
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.term-pic{
+    margin: auto 40px auto 0;
+}
+
+.term-pic img{
+    width: 42px;
+    height: 42px;
+}
+
+.term-descr span{
+    font-weight: 300;
+}
+
+.rent-info-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rent-info-image{
+    width: 50%;
+    position: relative;
+}
+
+.rent-info-descr{
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    bottom: 15%;
+}
+
+.rent-info-descr{
+    color: #fff;
+    width: 536px;
+}
+
+.rent-info-descr h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.rent-info-descr p{
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgba(0, 0, 0);
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+/* FAQ */
+
+.faq-main{
+    padding: 80px;
+    color: #383838;
+}
+
+.faq-header{
+    font-size: 35px;
+}
+
+.faq-header span{
+    font-weight: 300;
+}
+
+.faq-question{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.faq-img{
+    margin-top: 6px;
+}
+
+.faq-img img{
+    max-width: 35px;
+    height: 35px;
+}
+
+.faq-text{
+    margin-left: 50px;
+}
+
+.faq-question h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* CATALOG */
+
+.catalog-main{
+    padding: 100px 0;
+}
+
+.side-bar{
+    width: 200px;
+}
+
+.side-bar-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.side-bar-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.side-bar-radio:hover input ~ .checkmark {
+  background-color: rgb(161, 161, 161);
+}
+
+.side-bar-radio input:checked ~ .checkmark {
+  background-color: orange;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.side-bar-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.side-bar-radio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.catalog-wrapper{
+    display: flex;
+}
+
+.catalog-search-btn{
+    border: 1px solid #353535;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.catalog-search-btn:hover{
+    color: #fff;
+    background-color: #353535;
+    transition: 0.3s;
+}
+
+.catalog-search-btn:active{
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.8);
+}
