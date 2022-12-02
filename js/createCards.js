@@ -2,7 +2,7 @@ import { listOfCars } from "./cars-list.js";
 
 const cards = document.querySelector(".cards")
 
-export const createCards = (j, carBrand, carModel, carImage, carYear, carType, carVolume, carPrice) => {
+export const createCards = (j, carBrand, carModel, carImage, carYear, carType, carVolume, carPrice, id) => {
     const card = document.createElement('div');
     const cardImg = document.createElement('div');
     const cardImage = document.createElement('img');
@@ -32,6 +32,12 @@ export const createCards = (j, carBrand, carModel, carImage, carYear, carType, c
     volumeSpan.innerHTML = "Объем - " + carVolume + "л."
     carsPrice.innerHTML = carPrice + "Сом/День"
     reserveButton.innerHTML = "Добавить в корзину"
+    reserveButton.addEventListener('click', () => {
+        const basketStorage = localStorage.getItem('basket') || "[]"
+        const basket = JSON.parse(basketStorage)
+        const newCard = { carImage, carPrice, carModel, carBrand, carYear, carType, carVolume, id }
+        localStorage.setItem('basket', JSON.stringify([...basket, newCard]))
+    })
 
     cards.appendChild(card);
     card.appendChild(cardImg);
