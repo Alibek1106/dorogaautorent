@@ -30,7 +30,7 @@ const renderBasket = (cartItems) => {
                 <div class="car-descr">
                     <span>${carYear}</span>
                     <span>${carType}</span>
-                    <span>${carVolume}</span>
+                    <span>${"Объем - " + carVolume + "л."}</span>
                 </div>
             </div>
             `
