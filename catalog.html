@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DorogaAutoRent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
     <header class="header">
@@ -39,11 +40,22 @@
                         <img src="images/basket.svg" alt="">
                     </a>
                 </div>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
     <main class="catalog-main">
         <div class="container">
+            <div class="page-number-wrapper">
+                <div class="page-number black">01</div>
+                <div class="page-number-header-text">
+                    <h2>Каталог</h2>
+                </div>
+            </div>
             <div class="catalog-wrapper">
                 <div class="side-bar">
                     <label class="side-bar-radio">All
@@ -91,5 +103,6 @@
     </div>  
     <script type="module" src="js/catalog.js"></script>
     <script type="module" src="js/createCards.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>

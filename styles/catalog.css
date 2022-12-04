@@ -9,3 +9,56 @@
 .card-img{
     height: 320px;
 }
+
+@media screen and (max-width: 990px) {
+    .card{
+        width: 500px;
+    }
+
+    .side-bar{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .card{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .card-img{
+        height: 180px;
+    }
+
+    .side-bar-radio{
+        font-size: 16px;
+    }
+
+    .side-bar{
+        width: 100px;
+    }
+
+    .checkmark{
+        height: 18px;
+        width: 18px;
+    }
+
+    .side-bar-radio .checkmark:after{
+        top: 7px;
+        left: 7px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .catalog-search-btn{
+        font-size: 14px;
+    }
+
+    .catalog-main{
+        padding: 50px 0;
+    }
+
+    .reserve-btn button{
+        font-size: 14px;
+    }
+}

@@ -1,3 +1,7 @@
+import { openModal } from "./modal.js";
+
+openModal()
+
 const basketSide = document.querySelector('.basket');
 const basketStorage = JSON.parse(localStorage.getItem('basket')) || []
 

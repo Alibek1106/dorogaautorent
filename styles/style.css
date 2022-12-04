@@ -6,6 +6,7 @@
 
 .header-row{
     display: flex;
+    justify-content: space-between;
 }
 
 .logo{
@@ -67,7 +68,7 @@
 .contact-modal{
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -205,7 +206,7 @@
 }
 
 .page-number-header-text{
-    margin-left: 50px;
+    margin: auto 0 auto 50px;
 }
 
 .page-number-header-text h2{
@@ -227,7 +228,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    min-width: 360px;
+    width: 360px;
     margin-bottom: 30px;
 }
 
@@ -325,7 +326,7 @@
 .why-us-header{
     font-size: 71px;
     color: #fff;
-    width: 894px;
+    max-width: 894px;
     margin-bottom: 40px;
 }
 
@@ -355,8 +356,8 @@
 }
 
 .term-pic img{
-    width: 42px;
-    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
 }
 
 .term-descr span{
@@ -411,16 +412,8 @@
 /* FAQ */
 
 .faq-main{
-    padding: 80px;
+    padding: 80px 0;
     color: #383838;
-}
-
-.faq-header{
-    font-size: 35px;
-}
-
-.faq-header span{
-    font-weight: 300;
 }
 
 .faq-question{
@@ -459,50 +452,50 @@
 }
 
 .side-bar-radio {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .side-bar-radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #ccc;
-  border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
 }
 
 .side-bar-radio:hover input ~ .checkmark {
-  background-color: rgb(161, 161, 161);
+    background-color: rgb(161, 161, 161);
 }
 
 .side-bar-radio input:checked ~ .checkmark {
-  background-color: orange;
+    background-color: orange;
 }
 
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 .side-bar-radio input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
 .side-bar-radio .checkmark:after {
@@ -534,4 +527,8 @@
 
 .catalog-search-btn:active{
     box-shadow: 1px 2px 10px rgba(0,0,0,0.8);
+}
+
+.basket-main{
+    padding: 100px 0;
 }
