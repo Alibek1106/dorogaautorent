@@ -208,6 +208,18 @@
     .basket-main{
         padding: 50px 0;
     }
+
+    .modal-content{
+        width: 260px;
+    }
+
+    .contact-modal h2{
+        font-size: 18px;
+    }
+
+    .contact-inp input{
+        width: 120px;
+    }
 }
 
 @media screen and (max-width: 490px) {
